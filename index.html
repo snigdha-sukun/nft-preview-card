@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
 
   <title>Frontend Mentor | NFT preview card component</title>
 
@@ -24,20 +25,39 @@
 </head>
 
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="card | padding-2 border-radius-2">
+    <div class="card__image | cursor-pointer">
+      <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="card__image-item border-radius-1">
+      <div class="image__overlay | flex-container justify-center align-items-center | border-radius-1">
+        <img src="./images/icon-view.svg" alt="view">
+      </div>
+    </div>
+    <div class="card__content | padding-y-1">
+      <h1 class="card__title | padding-y-1 | cursor-pointer">Equilibrium #3429</h1>
+      <p class="card__description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="card__stats | flex-container justify-space-between align-items-center | padding-y-1">
+       <div class="card__stats-item | flex-container align-items-center">
+        <img src="./images/icon-ethereum.svg" alt="Ethereum">
+        <span class="card__stats__value | padding-left-05 text-color-cyan" data-type="ethereum">0.041 ETH</span>
+       </div>
+       <div>
+        <img src="./images/icon-clock.svg" alt="Clock">
+        <span class="card__stats__value padding-left-05">3 days left</span>
+       </div>
+      </div>
+      <hr>
+      <div class="card__author | padding-top-1 | flex-container align-items-center">
+        <div class="author__avatar | border-radius-50">
+          <img src="./images/image-avatar.png" alt="Jules Wyvern" width="100%">
+        </div>
+        <div class="author__details | padding-left-1">
+          Creation of <span class="author__name | text-color-white cursor-pointer">Jules Wyvern</span>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
