@@ -119,20 +119,12 @@ hr {
 .card__image {
     height: 18rem;
     position: relative;
-    opacity: 1;
     display: block;
 }
 
 .card__image-item {
-  display: block;
   width: auto;
   height: 100%;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.card__image:hover div.image__overlay{
-    display: grid;
 }
 
 .image__overlay {
@@ -144,6 +136,10 @@ hr {
     bottom: 100%;
     margin-bottom: 100%;
     position: relative;
+}
+
+.card__image:hover div.image__overlay{
+    display: grid;
 }
 
 .author__avatar {
